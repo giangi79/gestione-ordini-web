@@ -101,7 +101,7 @@ function App() {
   if (!session) return (
     <main className="login-shell">
       <section className="login-card">
-        <div className="brand-mark"><Boxes size={32} /></div>
+        <div className="login-logo"><img src="/logo.png" alt="Metal Group" /></div>
         <p className="eyebrow">GESTIONALE ONLINE</p>
         <h1>Gestione Ordini</h1>
         <p className="muted">Accedi per controllare ordini, articoli pronti, carichi e prodotti anche da smartphone.</p>
@@ -121,7 +121,7 @@ function App() {
   return (
     <div className="app-shell">
       <aside className="sidebar">
-        <div className="logo"><span><Boxes size={24} /></span><div><b>Gestione Ordini</b><small>Online</small></div></div>
+        <div className="logo"><img src="/logo.png" alt="Metal Group" /><div><b>Gestione Ordini</b><small>Online</small></div></div>
         <nav>
           <NavButton active={page === 'dashboard'} icon={<Home />} label="Dashboard" onClick={() => setPage('dashboard')} />
           <NavButton active={page === 'ordini'} icon={<ClipboardList />} label="Ordini" onClick={() => setPage('ordini')} />
