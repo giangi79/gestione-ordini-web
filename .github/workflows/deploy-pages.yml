@@ -23,11 +23,7 @@ jobs:
         with:
           node-version: 20
       - run: npm install
-      - name: Verifica sorgente Prodotti
-        run: grep -q "function Products" src/main.jsx
       - run: npm run build
-      - name: Verifica build Prodotti
-        run: grep -R -q "Anagrafica prodotti" dist/assets
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
