@@ -8,7 +8,7 @@ export default function LoadsV2({onChanged}){
  const load=useCallback(async()=>{setError('');const[a,c]=await Promise.all([
   supabase.from('go_articoli').select('id,codice,descrizione,quantita,numero_documento,riferimento_ordine').eq('stato','pronto').order('data_pronto',{ascending:true}),
   supabase.from('go_carichi').select('id,numero,stato,data_carico,data_consegna,note,go_dettagli_carico(id,quantita,codice_snapshot,descrizione_snapshot,articolo_id),go_pallet(id,numero,codice,note)').order('created_at',{ascending:false})
- ]);if(a.error||c.error)setError((a.error||c.error).message);else{setReady(a.data||[]);setLoads(c.data||[])}},[]);
+ ]);if(a.error||c.error)setError((a.error||c.error).message);else{setReady(a.data||[]);setLoads((c.data||[]).sort((x,y)=>{const dx=x.data_consegna||x.data_carico||'';const dy=y.data_consegna||y.data_carico||'';return String(dy).localeCompare(String(dx))}))}},[]);
  useEffect(()=>{load()},[load]);
  const toggle=id=>setSelected(v=>v.includes(id)?v.filter(x=>x!==id):[...v,id]);
  const palletCount=c=>{const match=String(c.note||'').match(/([0-9]+) pallet/i);return match?Number(match[1]):(c.go_pallet||[]).length};
