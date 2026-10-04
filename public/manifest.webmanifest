@@ -2,14 +2,14 @@
   "name": "Gestione Ordini",
   "short_name": "Ordini",
   "description": "Gestione ordini, articoli e consegne",
-  "start_url": "/",
-  "scope": "/",
+  "start_url": "/gestione-ordini-web/",
+  "scope": "/gestione-ordini-web/",
   "display": "standalone",
   "background_color": "#f5f5f4",
   "theme_color": "#1a1d21",
   "icons": [
     {
-      "src": "/favicon.png",
+      "src": "/gestione-ordini-web/favicon.png",
       "sizes": "any",
       "type": "image/png",
       "purpose": "any maskable"
