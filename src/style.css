@@ -21,3 +21,11 @@ body{background:#f5f5f4;color:#27272a}.login{background:radial-gradient(circle a
   .bottom button svg{width:18px;height:18px;}
   .bottom small{font-size:9px;line-height:1;}
 }
+
+/* Mantieni icone e testi originali, riducendo solo l'altezza della barra */
+@media(max-width:760px){
+  .bottom{height:40px;}
+  .bottom button{gap:1px;padding:0 2px;}
+  .bottom button svg{width:22px;height:22px;}
+  .bottom small{font-size:11px;line-height:1;}
+}
