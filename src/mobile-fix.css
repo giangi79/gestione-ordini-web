@@ -1,2 +1,15 @@
-/* Correzione posizione per iPhone */
-@media(max-width:760px){.app{height:100dvh!important;min-height:100dvh!important;padding-bottom:0!important;overflow:hidden!important}.app>section{flex:1 1 auto!important;height:auto!important;min-height:0!important;overflow-y:auto!important;padding:calc(10px + env(safe-area-inset-top,0px)) 12px calc(88px + env(safe-area-inset-bottom,0px))!important}.bottom{height:calc(68px + env(safe-area-inset-bottom,0px))!important;min-height:68px!important;padding:0 6px env(safe-area-inset-bottom,0px)!important;bottom:0!important;align-items:start!important}.bottom button{height:68px!important;min-height:68px!important;padding:5px 2px!important;justify-content:center!important}.bottom button svg{width:27px!important;height:27px!important}.bottom small{font-size:11px!important;line-height:1.1!important}}
+/* Correzione per web app iPhone installata */
+@media(max-width:760px){
+  html,body{padding-top:0!important;}
+  .app{height:100dvh!important;min-height:100dvh!important;padding-bottom:0!important;overflow:hidden!important;}
+  .app>section{flex:1 1 auto!important;height:auto!important;min-height:0!important;overflow-y:auto!important;padding:10px 12px 88px!important;}
+  .bottom{height:68px!important;min-height:68px!important;padding:0 6px!important;bottom:0!important;align-items:start!important;}
+  .bottom button{height:68px!important;min-height:68px!important;padding:5px 2px!important;justify-content:center!important;}
+  .bottom button svg{width:27px!important;height:27px!important;}
+  .bottom small{font-size:11px!important;line-height:1.1!important;}
+}
+
+@media(max-width:760px) and (display-mode:standalone){
+  .app>section{padding-top:calc(10px + env(safe-area-inset-top,0px))!important;padding-bottom:calc(88px + env(safe-area-inset-bottom,0px))!important;}
+  .bottom{height:calc(68px + env(safe-area-inset-bottom,0px))!important;padding-bottom:env(safe-area-inset-bottom,0px)!important;}
+}
