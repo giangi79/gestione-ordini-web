@@ -1,20 +1,6 @@
-/* Correzione per web app iPhone installata */
+/* Correzione per web app iPhone installata */@media(max-width:760px){  html,body{padding-top:0!important;}  .app{height:100dvh!important;min-height:100dvh!important;padding-bottom:0!important;overflow:hidden!important;}  .app>section{flex:1 1 auto!important;height:auto!important;min-height:0!important;overflow-y:auto!important;padding:10px 12px 88px!important;}  .bottom{height:68px!important;min-height:68px!important;padding:0 6px!important;bottom:0!important;align-items:start!important;}  .bottom button{height:68px!important;min-height:68px!important;padding:5px 2px!important;justify-content:center!important;}  .bottom button svg{width:27px!important;height:27px!important;}  .bottom small{font-size:11px!important;line-height:1.1!important;}}/* In modalità standalone l'area della Home Indicator è inclusa nell'app:   la barra scende fino al bordo fisico, senza fascia bianca sotto. */@media(max-width:760px) and (display-mode:standalone){  html,body,#root{height:calc(100dvh + env(safe-area-inset-bottom,0px))!important;min-height:calc(100dvh + env(safe-area-inset-bottom,0px))!important;background:#eef3f8!important;}  .app{height:calc(100dvh + env(safe-area-inset-bottom,0px))!important;min-height:calc(100dvh + env(safe-area-inset-bottom,0px))!important;}  .app>section{padding-top:calc(10px + env(safe-area-inset-top,0px))!important;padding-bottom:80px!important;}  .bottom{height:68px!important;min-height:68px!important;padding:0 6px!important;}  .bottom:after{display:none!important;}}
+/* Schede Ordini: spazio interno uniforme su iPhone. */
 @media(max-width:760px){
-  html,body{padding-top:0!important;}
-  .app{height:100dvh!important;min-height:100dvh!important;padding-bottom:0!important;overflow:hidden!important;}
-  .app>section{flex:1 1 auto!important;height:auto!important;min-height:0!important;overflow-y:auto!important;padding:10px 12px 88px!important;}
-  .bottom{height:68px!important;min-height:68px!important;padding:0 6px!important;bottom:0!important;align-items:start!important;}
-  .bottom button{height:68px!important;min-height:68px!important;padding:5px 2px!important;justify-content:center!important;}
-  .bottom button svg{width:27px!important;height:27px!important;}
-  .bottom small{font-size:11px!important;line-height:1.1!important;}
-}
-
-/* In modalità standalone l'area della Home Indicator è inclusa nell'app:
-   la barra scende fino al bordo fisico, senza fascia bianca sotto. */
-@media(max-width:760px) and (display-mode:standalone){
-  html,body,#root{height:calc(100dvh + env(safe-area-inset-bottom,0px))!important;min-height:calc(100dvh + env(safe-area-inset-bottom,0px))!important;background:#eef3f8!important;}
-  .app{height:calc(100dvh + env(safe-area-inset-bottom,0px))!important;min-height:calc(100dvh + env(safe-area-inset-bottom,0px))!important;}
-  .app>section{padding-top:calc(10px + env(safe-area-inset-top,0px))!important;padding-bottom:80px!important;}
-  .bottom{height:68px!important;min-height:68px!important;padding:0 6px!important;}
-  .bottom:after{display:none!important;}
+  .order{padding:18px!important;}
+  .order .articleButtons{margin-top:16px!important;}
 }
