@@ -59,7 +59,9 @@ body{background:#f5f5f4;color:#27272a}.login{background:radial-gradient(circle a
   .app{height:100svh;min-height:100svh;padding-bottom:0;overflow:hidden;}
   .app>section{min-height:0;overflow-y:auto;-webkit-overflow-scrolling:touch;padding-bottom:84px;}
   .bottom{height:70px;padding:0 4px;bottom:0;}
-}
+
+/* Layout iPhone finale */
+@media(max-width:760px){.app{height:100dvh!important;min-height:100dvh!important;padding-bottom:0!important;overflow:hidden!important}.app>section{flex:1 1 auto!important;height:auto!important;min-height:0!important;overflow-y:auto!important;padding:calc(10px + env(safe-area-inset-top,0px)) 12px calc(88px + env(safe-area-inset-bottom,0px))!important}.bottom{height:calc(68px + env(safe-area-inset-bottom,0px))!important;min-height:68px!important;padding:0 6px env(safe-area-inset-bottom,0px)!important;bottom:0!important;align-items:start!important}.bottom button{height:68px!important;min-height:68px!important;padding:5px 2px!important;justify-content:center!important}.bottom button svg{width:27px!important;height:27px!important}.bottom small{font-size:11px!important;line-height:1.1!important}}}
 
 /* Barra mobile compatta a 40px */
 @media(max-width:760px){
