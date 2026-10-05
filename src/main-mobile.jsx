@@ -1,3 +1,4 @@
+import'./mobile-fix.css';
 import React,{useCallback,useEffect,useMemo,useState}from'react';
 import{createRoot}from'react-dom/client';
 import{LayoutDashboard,ClipboardList,Truck,Package,LogIn,LogOut,Search,RefreshCw,Trash2,X}from'lucide-react';
