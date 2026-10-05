@@ -9,7 +9,12 @@
   .bottom small{font-size:11px!important;line-height:1.1!important;}
 }
 
+/* In modalità standalone l'area della Home Indicator è inclusa nell'app:
+   la barra scende fino al bordo fisico, senza fascia bianca sotto. */
 @media(max-width:760px) and (display-mode:standalone){
-  .app>section{padding-top:calc(10px + env(safe-area-inset-top,0px))!important;padding-bottom:calc(88px + env(safe-area-inset-bottom,0px))!important;}
-  .bottom{height:calc(68px + env(safe-area-inset-bottom,0px))!important;padding-bottom:env(safe-area-inset-bottom,0px)!important;}
+  html,body,#root{height:calc(100dvh + env(safe-area-inset-bottom,0px))!important;min-height:calc(100dvh + env(safe-area-inset-bottom,0px))!important;background:#eef3f8!important;}
+  .app{height:calc(100dvh + env(safe-area-inset-bottom,0px))!important;min-height:calc(100dvh + env(safe-area-inset-bottom,0px))!important;}
+  .app>section{padding-top:calc(10px + env(safe-area-inset-top,0px))!important;padding-bottom:80px!important;}
+  .bottom{height:68px!important;min-height:68px!important;padding:0 6px!important;}
+  .bottom:after{display:none!important;}
 }
