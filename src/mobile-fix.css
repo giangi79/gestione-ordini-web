@@ -1,6 +1,18 @@
-/* Correzione per web app iPhone installata */@media(max-width:760px){  html,body{padding-top:0!important;}  .app{height:100dvh!important;min-height:100dvh!important;padding-bottom:0!important;overflow:hidden!important;}  .app>section{flex:1 1 auto!important;height:auto!important;min-height:0!important;overflow-y:auto!important;padding:10px 12px 88px!important;}  .bottom{height:68px!important;min-height:68px!important;padding:0 6px!important;bottom:0!important;align-items:start!important;}  .bottom button{height:68px!important;min-height:68px!important;padding:5px 2px!important;justify-content:center!important;}  .bottom button svg{width:27px!important;height:27px!important;}  .bottom small{font-size:11px!important;line-height:1.1!important;}}/* In modalità standalone l'area della Home Indicator è inclusa nell'app:   la barra scende fino al bordo fisico, senza fascia bianca sotto. */@media(max-width:760px) and (display-mode:standalone){  html,body,#root{height:calc(100dvh + env(safe-area-inset-bottom,0px))!important;min-height:calc(100dvh + env(safe-area-inset-bottom,0px))!important;background:#eef3f8!important;}  .app{height:calc(100dvh + env(safe-area-inset-bottom,0px))!important;min-height:calc(100dvh + env(safe-area-inset-bottom,0px))!important;}  .app>section{padding-top:calc(10px + env(safe-area-inset-top,0px))!important;padding-bottom:80px!important;}  .bottom{height:68px!important;min-height:68px!important;padding:0 6px!important;}  .bottom:after{display:none!important;}}
-/* Schede Ordini: spazio interno uniforme su iPhone. */
+/* Navigazione mobile in alto: nessuna barra ancorata al viewport. */
+.topTabs{display:none}
 @media(max-width:760px){
-  .order{padding:18px!important;}
-  .order .articleButtons{margin-top:16px!important;}
+ html,body,#root{min-height:100%;height:auto!important;overflow-x:hidden}
+ body{margin:0;background:#eef3f8}
+ .app{height:auto!important;min-height:100dvh!important;max-height:none!important;overflow:visible!important;padding:0!important;display:block!important}
+ .app>section{height:auto!important;min-height:100dvh!important;overflow:visible!important;padding:10px 12px calc(30px + env(safe-area-inset-bottom,0px))!important}
+ .app>section>header{margin-bottom:10px!important}
+ .topTabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;position:relative;z-index:2;margin:0 0 16px;padding:6px;border-radius:15px;background:#123a5b}
+ .topTabs button{display:flex;align-items:center;justify-content:center;gap:6px;min-width:0;min-height:48px;padding:8px 5px;border:0;border-radius:11px;background:transparent;color:#e7f2fa;font-size:12px;font-weight:700;cursor:pointer;touch-action:manipulation}
+ .topTabs button.on{background:#20a99f;color:#fff}
+ .topTabs .navIcon{flex-shrink:0}
+ .topTabs .noteDot{top:-9px;right:-9px;border-color:#123a5b}
+ .appRefreshButton{position:fixed!important;right:14px!important;bottom:calc(16px + env(safe-area-inset-bottom,0px))!important;z-index:1000!important;touch-action:manipulation}
+ .order{padding:18px!important}
+ .order .articleButtons{margin-top:16px!important}
 }
+@media(max-width:760px) and (min-width:500px){.topTabs{grid-template-columns:repeat(4,minmax(0,1fr))}}
