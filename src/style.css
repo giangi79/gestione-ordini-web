@@ -164,3 +164,7 @@ header{margin-bottom:30px!important;align-items:flex-end!important}header small{
 
 /* Apertura da Dashboard: porta l’attenzione sulla scheda collegata alla nota */
 .order.orderHighlighted{border-color:#23b7ad!important;background:#f1fffc!important;box-shadow:0 0 0 4px rgba(35,183,173,.25),0 16px 32px rgba(29,63,92,.15)!important}
+
+/* Pulsante di accesso sempre visibile, anche su schermi piccoli */
+.login .auth .loginSubmit{display:block!important;visibility:visible!important;opacity:1!important;position:relative!important;width:100%!important;min-height:48px!important;padding:13px 18px!important;background:#155aa0!important;color:#fff!important;border:0!important;border-radius:11px!important;font-weight:800!important;cursor:pointer!important;z-index:1}
+.login .auth{height:auto!important;max-height:none!important;overflow:visible!important}
