@@ -19,3 +19,11 @@
 
 @media(max-width:760px){.app>section>header{position:sticky;top:0;z-index:40;background:#f5f5f4;padding:8px 0}.app>section>header .mobileLogout{display:inline-flex!important;min-height:40px;touch-action:manipulation}}
 @media(min-width:761px){.app>aside{position:sticky;top:0;height:100vh;overflow-y:auto}.app>aside .logout{position:sticky;bottom:0;background:#20436e;color:white;justify-content:center}}
+
+/* Desktop: menu laterale fisso, scorre solo il contenuto a destra */
+@media(min-width:761px){
+ html,body,#root{height:100%;overflow:hidden}
+ .app{height:100vh;min-height:0;overflow:hidden;grid-template-columns:230px minmax(0,1fr)}
+ .app>aside{position:relative;top:auto;height:100vh;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+ .app>section{height:100vh;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+}
