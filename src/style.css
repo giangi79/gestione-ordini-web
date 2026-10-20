@@ -168,3 +168,9 @@ header{margin-bottom:30px!important;align-items:flex-end!important}header small{
 /* Pulsante di accesso sempre visibile, anche su schermi piccoli */
 .login .auth .loginSubmit{display:block!important;visibility:visible!important;opacity:1!important;position:relative!important;width:100%!important;min-height:48px!important;padding:13px 18px!important;background:#155aa0!important;color:#fff!important;border:0!important;border-radius:11px!important;font-weight:800!important;cursor:pointer!important;z-index:1}
 .login .auth{height:auto!important;max-height:none!important;overflow:visible!important}
+
+/* Identita METAL M GRUP: logo orizzontale completo */
+.app aside .logo{width:100%;height:auto;min-height:82px;margin:0 0 22px;padding:4px;background:#0c1016;border-radius:12px;overflow:hidden}
+.app aside .logo img{display:block;width:100%;height:auto;max-height:105px;object-fit:contain}
+.auth .brand{width:100%;height:auto;min-height:110px;padding:6px;background:#0c1016;overflow:hidden}
+.auth .brand img{display:block;width:100%;max-height:150px;height:auto;object-fit:contain}
