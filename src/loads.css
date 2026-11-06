@@ -4,3 +4,6 @@
 
 /* PDF ed Excel per ogni carico, senza comprimere il titolo sui telefoni */
 @media(max-width:760px){.loadHeadRow{flex-wrap:wrap}.loadHeadRow .loadHead{flex-basis:100%}.loadHeadRow .loadPdf{flex:1;min-width:0}}
+
+/* Raggruppamento visivo come negli export Excel */
+.readySelect .dataCode,.loadDetails .detailRowV2 .dataCode{display:inline-block;background:#e2f3e6;color:#174c30;font-weight:800;padding:4px 8px;border-radius:6px}.visualGroupSpace{height:12px;flex:none}.visualSubtotal{display:flex;justify-content:flex-end;align-items:center;gap:12px;padding:10px 14px;margin:3px 0 0;background:#e7effa;border-radius:8px;color:#143d70;font-weight:800}.visualSubtotal span{text-align:right}.visualSubtotal strong{min-width:55px;text-align:right}
