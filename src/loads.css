@@ -13,3 +13,6 @@
 
 /* Gruppi semplici: un unico codice per riga, separatore netto */
 .readySelect .visualGroupSpace,.loadDetails .visualGroupSpace{height:0;margin:20px 0 14px;border-bottom:4px solid #7c97ad}.readySelect .visualSubtotal,.loadDetails .visualSubtotal{margin:7px 0 0;padding:12px 14px;background:#dbe9f6;border:2px solid #8faec9;border-left:6px solid #235f92;border-radius:9px;color:#123d65}.readySelect .visualSubtotal span,.loadDetails .visualSubtotal span{font-weight:800;text-align:left}.readySelect .visualSubtotal strong,.loadDetails .visualSubtotal strong{font-size:1.08em}.readySelect .selectRow,.loadDetails .detailRowV2{border-left:3px solid #b2c7d8}
+
+/* Le schede dei carichi riprendono le schede dei pronti */
+.loadDetails .loadArticleCard{display:block;padding:12px 14px;margin:0;border-radius:11px}.loadDetails .loadArticleCard .readyArticle{width:100%;min-width:0}.loadDetails .loadArticleCard .readyMeta{display:flex;flex-wrap:wrap;gap:9px 18px}.loadDetails .loadArticleCard .qtyBtn{margin-top:10px;padding:7px 11px;border-radius:8px}.loadDetails .loadArticleCard .qtyEdit{margin-top:10px}.loadDetails .loadArticleCard .dataName{overflow-wrap:anywhere}
